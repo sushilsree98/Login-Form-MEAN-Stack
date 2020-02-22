@@ -1,0 +1,43 @@
+<div class="container">
+    <section id="content">
+        <form [formGroup]="regForm" (submit)="regSubmit();">
+            <h1>Register Form</h1>
+            <div>
+                <input type="text" placeholder="Name" required="" id="username" formControlName="name" />
+            </div>
+            <div>
+                <input type="text" placeholder="Username" required="" id="password" formControlName="username"/>
+            </div>
+            <div>
+                <input type="text" placeholder="Password" required="" id="password" formControlName="pass"/>
+            </div>
+            <div>
+                <input type="text" placeholder="Re-type Password" required="" id="password" formControlName="retype"/>
+            </div>
+            <div class="">
+              <button type="submit">Submit</button>
+            </div>
+        </form><!-- form -->
+
+    </section><!-- content -->
+</div><!-- container -->
+
+<!-- <form [formGroup]="regForm" (submit)="regSubmit();">
+  <div class="form-group">
+    <label for="exampleInputEmail1">name</label>
+    <input type="text" class="form-control"  formControlName="name">
+    </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">email</label>
+    <input type="email" class="form-control"  formControlName="username">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="text" class="form-control"  formControlName="pass">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Re-type password</label>
+    <input type="text" class="form-control"  formControlName="retype">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form> -->
